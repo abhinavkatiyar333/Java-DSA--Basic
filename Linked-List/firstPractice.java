@@ -119,29 +119,25 @@ public class firstPractice {
 
                     }
                     temp = temp.next;
+                    
 
                 }
                 return -1;
 
           }
-          public int helper(Node head, int key){
-                    if(head == null){
-                              return -1;
-                    }
-                    if(head.data == key){
-                              return 0;
-                    }
+          public void Reverse(){
+            Node prev = null;
+            Node curr = tail = head;
+            Node next;
 
-                    int index = helper(head.next ,key);
-                              if(index == -1){
-                                        return -1;
-                              }
-                              return index+1;
-                    
-          }
-          public int RecursiveSearch(int key){
-                    return helper(head, key);
+            while(curr !=null){
+              next = curr.next;
+              curr.next = prev;
+              prev = curr;
+              curr = next;
 
+            }
+            head = prev;
           }
           public static void main(String[] args) {
                     firstPractice ll = new firstPractice();
@@ -164,7 +160,10 @@ public class firstPractice {
                     ll.addMid(5,2);
                     ll.print();
                   System.out.println( ll.Iterative(4));
-                  System.out.println(ll.RecursiveSearch(4));
+                  System.out.println("Reverse a linked list");
+                  ll.Reverse();
+                  ll.print();
+                  
                     
           }
           
