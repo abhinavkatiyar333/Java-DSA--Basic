@@ -1,6 +1,8 @@
 import java.util.*;
 
 public class RightRotate {
+              // Right rotate in an array
+
           public static void Reverse(int num[], int start,int end ){
              
              

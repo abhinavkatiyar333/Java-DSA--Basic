@@ -1,6 +1,6 @@
 import java.util.*;
 public class factorial {
-
+                // Find factorial
            
                public static   int fact(int n){
                     if(n==0 || n==1){

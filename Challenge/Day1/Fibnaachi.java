@@ -1,5 +1,7 @@
 public class Fibnaachi {
 
+
+          // print Fibonacci
           public static int Fib(int n){
                     int sum =0;
                     if(n==0 || n==1){

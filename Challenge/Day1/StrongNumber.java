@@ -1,6 +1,7 @@
 import java.util.*;
 public class StrongNumber {
 
+       // check number is Strong number or not
           public static int fact(int num){
                     if(num==0 || num==1){
                               return 1;

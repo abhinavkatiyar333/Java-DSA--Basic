@@ -2,6 +2,7 @@ package Challenge.Day3;
 import java.util.*;
 
 public class reverse {
+                     // Reverse in an Array
           public static void main(String[] args) {
                     int num[] = { 1,2,3,4,5};
 

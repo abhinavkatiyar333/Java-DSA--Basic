@@ -1,6 +1,8 @@
 import java.util.*;
 
 public class Palindrome {
+                  
+       //   check number is Palindrome or not
           public static void main(String[] args) {
                     int number = 12321;
                     boolean ispalindrome = false;

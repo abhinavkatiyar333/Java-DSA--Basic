@@ -2,6 +2,7 @@ package Challenge.Day2;
 import java.util.*;
 
 public class sumandaverage {
+                    // Average and Sum  of an ARRAY
           public void Average(int num[]){
                     int sum =0;
                     for(int i=0;i<num.length;i++){
@@ -11,7 +12,7 @@ public class sumandaverage {
                      System.out.println("Sum of Array is := "+ sum );
                     System.out.println("Average of Array is := "+ sum/num.length );
           }
-
+            // Find odd or even number in an ARRAY
           public void oddorEven(int num[]){
                     int countodd = 0;
                     int counteven =0;

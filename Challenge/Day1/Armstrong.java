@@ -1,6 +1,7 @@
 import java.util.*;
 
 public class Armstrong {
+               // check  Armstrong number
           public static void main(String[] args) {
                     int number = 153;
                     int sum =0;

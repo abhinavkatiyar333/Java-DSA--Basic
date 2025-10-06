@@ -1,4 +1,6 @@
 public class perfectnumber {
+
+           // check number is perfect or not
           public static void main(String[] args) {
                     int number = 28;
                     int original = number;
