@@ -1,10 +1,11 @@
 import java.util.*;
 
-public class BinarySearch {
-          //   Basic Binary Search (Iterative + Recursive)
+public class findFirstOccurance {
+            // find first occurance of Target value
           public static void main(String[] args) {
-                    int  arr[] = {1, 3, 5, 7, 9, 11};
-                    int  target = 7;
+                   int arr[] = {2,4,4,4,6,7,8};
+                   int  target = 4;
+                    int result = -1;
 
                     int start =0;
                     int end = arr.length-1;
@@ -13,11 +14,11 @@ public class BinarySearch {
                               int mid =  start+(end-start)/2;
                               
                               if(arr[mid] == target){
-                                        System.out.print("Index at : = "+mid);
-                                        break;
+                                       result = mid;
+                                        end = mid-1;
                               }
                                                                                                                   
-                              if(arr[mid]>target){
+                              else  if(arr[mid]>target){
                                 end = mid-1;
                                }else{
                               start = mid+1;
@@ -25,11 +26,9 @@ public class BinarySearch {
                               
 
                               }
-                             
-
-                    }
+                              System.out.println("First occurance is : = "+ result);
 
 
+          }
           
 }
-
